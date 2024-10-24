@@ -1,0 +1,45 @@
+.body{
+    background-color: #057100;
+}
+.izquierdo{
+    background: #CFFECD;
+}
+.flayer {
+    width: 100%;            /* Ocupar todo el ancho del contenedor */
+    height: auto;           /* Ajustar la altura automáticamente para mantener la proporción */
+    object-fit: cover;      /* Recorta la imagen si es necesario para cubrir todo el contenedor */
+    display: block;         /* Asegura que no haya espacio en blanco extra por ser un elemento inline */
+}
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .custom-btn {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+    .custom-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #fff; /* Color del texto */
+        background-color: #28a745; /* Color de fondo del botón */
+        border: 2px solid #080808; /* Color del borde */
+        border-radius: 15px; /* Bordes redondeados */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para transformaciones y sombras */
+    
+    }
+    
+    .custom-btn:hover {
+        transform: translateY(-5px); /* Eleva el botón hacia arriba */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color: #080808;
+        text-decoration: none; /* Elimina el subrayado */
+    }

@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #057100;
+    width: 100%;
+    height: 120px;
+    position: relative; /* Fondo verde para el header */
+}
+
+header img.logo {
+    max-height: 100px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+header nav a {
+    margin-left: 0.5rem; /* Ajusta el espacio entre los botones */
+}
+/* Estilos personalizados para los botones */
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    background-color: #28a745; /* Color de fondo del botón */
+    border: 2px solid #080808; /* Color del borde */
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para transformaciones y sombras */
+
+}
+
+.custom-btn:hover {
+    transform: translateY(-5px); /* Eleva el botón hacia arriba */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #080808;
+    text-decoration: none; /* Elimina el subrayado */
+}
+/* Estilo para el fondo del cuerpo del documento */
+.cont {
+    background-color: #CFFECD; /* Fondo amarillo para el resto del contenido */
+    margin: 0;   
+    padding: 0;             /* Eliminar márgenes por defecto */
+    font-family: Arial, sans-serif; /* Fuente por defecto */
+}
+.arco{
+    height: 418px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+ .bienvenida{
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 1050px; /* Limita el ancho máximo para que no sea demasiado grande en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 20px; /* Añade un poco de espacio interior para que no toque los bordes */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+p {
+    font-family: cursive;
+    font-size: 100%; /* Ajusta el tamaño de la fuente para que sea legible en dispositivos pequeños */
+    line-height: 1.5; /* Aumenta el interlineado para mejorar la legibilidad */
+}
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.users .user a {
+    text-decoration: none; 
+    color: #057100; 
+    font-weight: bold;
+    text-align: center;
+}
+.users .user a:hover {
+    color: white; /* Opcional: cambia el color cuando se pase el mouse por encima */
+}
+
+
+
+.imagen-fondo{
+    background-image: url('/imagenes/fondR.jpg');
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed; /* Hace que la imagen no se desplace al hacer scroll */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+   
+}
+ .table-container {
+    max-width: 30%; /* La tabla ocupará el % del ancho de la pantalla en pantallas grandes */
+    margin: 0 auto; /* Centrar la tabla */
+    max-height: 560px; /* Define la altura máxima del contenedor */
+    overflow-y: auto; /* Activa el scroll vertical */
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    border: 5px solid #ddd; /* Agrega un borde para visualizar mejor */
+}
+.scrollable-table {
+    width: 100%; /* Asegura que la tabla ocupe el ancho del contenedor */
+}
+/* Asegurar que la tabla sea responsive y ocupe el 100% en pantallas pequeñas */
+@media (max-width: 768px) {
+    .table-container {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        max-width: none; /* Sin restricción de ancho máximo */
+    }
+}
+

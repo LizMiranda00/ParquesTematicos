@@ -1,0 +1,46 @@
+/* VISTA EDITAR PERFIL */
+
+.contenedor{
+    background: #CFFECD;
+}
+.container{
+    text-align: center;
+}
+.texti{
+  margin-top: 5%;
+  font: 1em sans-serif; 
+  font-size: large; 
+}
+.form-control-file{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #080808; /* Color del texto */
+    background-color: #c7f6d2; /* Color de fondo del botón */
+    border: 2px solid #080808; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.btn.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    background-color: #28a745; /* Color de fondo del botón */
+    border: 2px solid #080808; /* Color del borde */
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para transformaciones y sombras */
+    
+}
+.btn.btn-primary:hover {
+    transform: translateY(-5px); /* Eleva el botón hacia arriba */ color: #080808;
+    background-color: #28a745;
+    border: 2px solid #080808;
+    text-decoration: none; /* Elimina el subrayado */
+}

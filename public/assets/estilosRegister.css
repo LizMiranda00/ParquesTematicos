@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/imagenes/fondR.jpg');
+        background-size: cover; /* La imagen cubre todo el fondo */
+        background-repeat: no-repeat; 
+        background-position: center center; 
+        background-attachment: fixed; /* Hace que la imagen no se desplace al hacer scroll */
+        height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+        margin: 0; 
+        padding: 0; 
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #CFFECD;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-body {
+    padding: 20px;
+    flex: 1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-control {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    background-color: #28a745; /* Color de fondo del botón */
+    border: 2px solid #080808; /* Color del borde */
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para transformaciones y sombras */
+
+}
+
+.custom-btn:hover {
+    transform: translateY(-5px); /* Eleva el botón hacia arriba */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #080808;
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.btn-outline:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+p{
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,  
+        -1px 1px 0 #000,  
+        1px 1px 0 #000; 
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.password-container input {
+    width: 73%;
+    padding-right: 40px; /* Espacio suficiente para el ícono */
+}
+.toggle-password {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toggle-password img {
+    width: 20px; /* Tamaño del icono */
+    height: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+}

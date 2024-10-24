@@ -1,0 +1,137 @@
+.content{
+    background: #CFFECD;
+}
+.profile-content{
+    margin-left: 2%;
+}
+/* BOTON EDITAR PERFIL */
+.editarPerfil{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    background-color: #28a745; /* Color de fondo del botón */
+    border: 2px solid #080808; /* Color del borde */
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para transformaciones y sombras */
+
+}
+.editarPerfil:hover {
+    transform: translateY(-5px); /* Eleva el botón hacia arriba */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #080808;
+    text-decoration: none; /* Elimina el subrayado */
+}
+.imagen {
+    height: 200px; /* alto fijo */
+    width: auto; /* ancho automático */
+    object-fit: contain; /* ajusta la imagen al contenedor manteniendo su relación de aspecto */
+    max-width: 100%; /* evita que la imagen sea demasiado ancha */
+  
+  }
+
+.welcome{
+   text-align: center; 
+    color: black;
+    font-family: cursive;
+    font-size: 400%;
+}
+header {
+    margin-top: 0;
+    padding: 0;
+}
+.logo{
+    position: absolute; /* Permite posicionar la imagen */
+    top: 15px; /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
+    width: 350px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.iconos-superior {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    position: relative; /* Permite que los elementos hijos usen absolute si es necesario */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 120px;
+    padding:10px; /* Espacio interno */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    background: #057100;
+    margin: 0; /* Asegúrate de que no haya margen en el contenedor */
+    top: 0; /* Asegura que esté al tope */
+    left: 0;
+}
+
+.icon-text {
+    display: inline-flex;
+    flex-direction: column; /* Coloca el texto debajo de la imagen */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #000; /* Cambia el color del texto si es necesario */
+    margin-right: 30px;
+}
+
+.icon-text img {
+    height: 55px; /* Ajusta la altura de la imagen */
+    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+}
+
+.icon-text span {
+    font-size: 14px; /* Tamaño del texto */
+}
+
+/* Ajusta el tamaño del texto e imagen en pantallas más pequeñas */
+@media (max-width: 600px) {
+    .icon-text img {
+        height: 20px; /* Reduce la altura en pantallas pequeñas */
+    }
+    .icon-text span {
+        font-size: 12px; /* Reduce el tamaño del texto */
+    }
+    .icon-ubicacion {
+        height: 20px; /* Ajusta la altura del icono de ubicación */
+        width: auto; /* Mantiene la relación de aspecto */
+    }
+}
+
+.icon-ubicacion{
+    display: inline-flex;
+    flex-direction: column; /* Coloca el texto debajo de la imagen */
+    align-items: center;
+    color: #000; /* Cambia el color del texto si es necesario */
+    margin-right: 30px;
+}
+.icon-ubicacion img {
+    height: 55px; /* Ajusta la altura de la imagen */
+    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+}
+.icon-ubicacion span {
+    font-size: 14px; /* Tamaño del texto */
+}
+
+
+
+
+.rating {
+    direction: rtl;
+    display: inline-block;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2em;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: gold;
+}

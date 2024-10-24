@@ -1,0 +1,75 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+
+class User extends Authenticatable
+{
+    use HasFactory, Notifiable;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+        'entry_cost', 
+        'opening_hours',
+        'transport_cbba',
+        'transport_vt',
+        'lodgings',
+        'profile_image', 
+        'location_url',
+    ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array<int, string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'password' => 'hashed',
+    ];
+
+    /**
+     * Relación con las imágenes del perfil.
+     */
+    public function parqueImages()
+{
+    return $this->hasMany(ParqueImage::class, 'user_id');
+}
+
+    /**
+     * Relación con los videos del perfil.
+     */
+    public function parqueVideos()
+{
+    return $this->hasMany(ParqueVideo::class, 'user_id');
+}
+
+public function ratings()
+{
+    return $this->hasMany(Rating::class, 'user_id');
+}
+
+
+
+}
